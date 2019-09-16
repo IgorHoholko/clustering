@@ -121,7 +121,14 @@ class Graph:
         
         self.AM[col, row] = 1
         
+    
+    def _set_default_map(self):
+        self.keys_idx = {i:i for i in range(self.n)}
+        self.idx_keys = {i:i for i in range(self.n)}
+        return self
         
+        
+    
     def _matrix_to_list(self):
         "Transform the graph' adjacency matrix to the adjacency list"
         #Selecte coordinates of the every point in the graph 
@@ -185,7 +192,6 @@ class Graph:
             #transform 'names' receiving from the user to the indexes
             idx = self.keys_idx.get(key)
             idxs_adj = self._keys_to_indexis(data[key])
-            
             #add the edges to the storage objects
             self._add_adj(idx, idxs_adj)
     
@@ -230,7 +236,8 @@ class Graph:
             v1, v2 = self._keys_to_indexis(points)
             self._add_adj(v1, v2, w)
     
-            
+    
+    
     def remove_adj(self, data):
         """ 
         Remove the adjacency from the graph.

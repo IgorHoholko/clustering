@@ -1,0 +1,40 @@
+Num centers: 6
+Num points: 1272
+Center 5 is closest. Distance is 0.8927451372146606
+Compare with T_s = 0.7
+0.8927451372146606>=0.7 so add x to subcluster 5
+while True
+Num of centers hasn't changed? Now it is : 6
+A : 0.70694417
+idxs which subclusters need to join: 
+(array([4, 5]), array([5, 4]))
+We will remove 5 and write to 4
+i_, j_ 4 5
+JOIN
+self.points_sum (6, 2048)
+self.k_list (6,)
+self.centers (6, 2048)
+self.idxs_points 6
+AFTER
+self.points_sum (5, 2048)
+self.k_list (5,)
+self.centers (5, 2048)
+self.idxs_points 5
+Now the num of centers is 5
+Graph size is 6
+Graph Adj matrix shape is : (6, 6)
+Line of the Graph we will remove [0. 0. 0. 0. 1. 0.]
+Our center was in cluster with [4]
+Updated coordinates: [4]
+Removing.. Graph size is 5
+D between C and affected ones : [1.]
+__s_k_ :  [0.10164093070223407]
+ds :  [1.]
+idxs_connected [True]
+So we will connect : [0]
+while True
+Num of centers hasn't changed? Now it is : 5
+A : 0.5626313
+idxs which subclusters need to join: 
+(array([], dtype=int64), array([], dtype=int64))
+
